@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Store Area</h2>
+@Html.ActionLink("Все книги", "Index", "Book", new { id = 10 }, null)
+
+@Html.ActionLink("Все книги", "List", new { area = "Library", controller = "Book" })
+
+@Html.ActionLink("Все книги", "Index", new { area = "", controller = "Home" })
+
